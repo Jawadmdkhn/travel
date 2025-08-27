@@ -14,10 +14,10 @@ export async function clientLoader() {
 
 const SignIn = () => {
     return (
-        <main className="auth">
-            <section className="size-full glassmorphism flex-center px-6">
-                <div className="sign-in-card">
-                    <header className="header">
+        <main className="bg-[url(/assets/images/auth-img.webp)] bg-cover bg-center h-screen w-full flex justify-center items-center">
+            <section className="h-[50vh] w-[25%] px-6 rounded-lg bg-white flex justify-center items-center">
+                <div className="flex flex-col items-center justify-center gap-y-3">
+                    <header className="flex flex-col items-center">
                         <Link to="/">
                             <img
                                 src="/assets/icons/logo.svg"
@@ -29,14 +29,14 @@ const SignIn = () => {
                     </header>
 
                     <article>
-                        <h2 className="p-28-semibold text-dark-100 text-center">Start Your Travel Journey</h2>
+                        <h2 className="text-center">Start Your Travel Journey</h2>
 
-                        <p className="p-18-regular text-center text-gray-100 !leading-7">Sign in with Google to manage destinations, itineraries, and user activity with ease.</p>
+                        <p className="text-center mt-2">Sign in with Google to manage destinations, itineraries, and user activity with ease.</p>
                     </article>
 
                     <button
                         type="button"
-                        className="button-class !h-11 !w-full"
+                        className="bg-blue-500 rounded-lg !h-11 !w-full flex items-center justify-center gap-x-3 cursor-pointer"
                         onClick={loginWithGoogle}
                     >
                         <img
